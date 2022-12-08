@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Inicio de sesión</title>
+</head>
+<body>
+    <form method="POST" action="validar_usuario.php">
+        <div class="mb-3" align="center">
+            <h2>Inicio de sesión</h2>
+        <table>
+            <tbody>
+                <td>
+                    <label class="form-label" for="correo_usuario">Correo electrónico/Usuario</label>
+                </td>
+                <td>
+                    <input type="text" class="form-control" name="correo_usuario" id="correo_usuario" placeholder="Ingrese su correo/usuario">
+                </td>
+                <tr>
+                    <td>
+                        <label class="form-label"  for="pass">Contraseña</label>
+                    </td>
+                    <td>
+                        <input type="password" class="form-control" name="pass" id="pass" placeholder="Ingrese su contraseña">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input class="btn btn-success" type="submit" value="Iniciar Sesión">
+        </div>
+    </form>
+    <hr>
+    <div align="center">
+    <p>¿Aún no tenes una cuenta?. <a href="registro_user.html"><button class="btn btn-warning">¡Registrate acá!</button></a></p>
+</div>
+</body>
+</div>
+</html>

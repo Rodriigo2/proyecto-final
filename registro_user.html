@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <form action="guardar_usuario.php" method="post">
+        <div class="form-group" align="center">
+            <h2>Registro de usuario</h2>
+        <table>
+            <tr>
+                <td><label for="nombre_usuario">Usuario</label></td>
+                <td><input type="text" class="form-control" name="nombre_usuario" id="nombre_usuario" placeholder="Ingrese Usuario"></td>
+            </tr>
+            <tr>
+                <td><label for="correo_usuario">Correo electrónico</label></td>
+                <td><input type="email" class="form-control" name="correo_usuario" id="correo_usuario" placeholder="Ingrese Correo electrónico"></td>
+            </tr>
+            <tr>
+                <td><label for="password_usuario">Contraseña</label></td>
+                <td><input type="password" class="form-control" name="password_usuario" id="password_usuario" placeholder="Ingrese Contraseña"></td>
+            </tr>
+        </table>
+        <input type="submit" class="btn btn-success" value="Crear Usuario" name="btn-usuario" id="btn-usuario">
+    </div>
+    </form>
+    <hr>
+    <a href="index.html"><button class="btn btn-secondary">Volver a Inicio de sesión</button></a>
+</body>
+</html>
